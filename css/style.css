@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.debug{
+  border: 1px solid red;
+  background-color: rgba(0, 255, 255, 0.46);
+}
+.debug2{
+  border: 1px solid blueviolet;
+  background-color: rgba(80, 215, 170, 0.615);
+}
+section{
+  padding-top: 30px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(161, 161, 161);
+}
+
+.container{
+  min-height: 600px;
+  height: 90%;
+  width: 80%;
+  background-color: rgb(208, 207, 207);
+  border: 1px solid black;
+  margin: 0 auto;
+  display: flex;
+}
+
+.user-container{
+  min-height: 600px;
+  height: 100%;
+  width: 30%;
+}
+.chat-container{
+  min-height: 600px;
+  height: 100%;
+  width: 70%;
+}
