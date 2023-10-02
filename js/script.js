@@ -175,4 +175,12 @@ data(){
 
   }
 },
+
+methods:{
+
+},
+
+mounted(){
+
+},
 }).mount('#app');
