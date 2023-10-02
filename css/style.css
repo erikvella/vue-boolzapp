@@ -89,3 +89,23 @@ section{
   color: black;
   margin-left: 10px;
 }
+/* fine stili box blu */
+
+/* stili dell'input area */
+.input-area{
+  height: 60px;
+  background-color: rgb(241, 238, 238);
+}
+.contact-search-bar{
+  align-self: center;
+  width: 100%;
+}
+.input-bar{
+  height: 40px;
+  margin-left: 5px;
+  border-radius: 15px;
+  min-width: calc(100% - 10px);
+  border: 1px solid grey;
+}
+
+/* parte dedicata ai miei contantti */
