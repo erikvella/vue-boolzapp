@@ -17,7 +17,7 @@
 
     <div id="app">
       <div class="container d-flex ">
-<!-- parte dedicata ai contantti -->
+           <!-- parte dedicata ai contantti -->
         <div class="user-container d-flex">
           <!-- parte dedicata al tuo profilo -->
           <div class="user-area d-flex ">
@@ -92,7 +92,10 @@
             <div class="last-message-time">
               <p class="grey-text">12.00</p>
             </div>
-  
+            
+
+
+            
           </div>
 
           
@@ -100,16 +103,69 @@
           
 
         </div>
-<!-- parte  dedicata alla chat -->
-        <div class="chat-container debug2">
+        <!-- parte  dedicata alla chat -->
+        <div class="chat-container ">
+              <!-- zona user della chat attuale -->
+          <div class="top-bar d-flex">
 
+            <div class="chat-top-bar d-flex">
+              <div class="box-image">
+                <img src="img/avatar_1.jpg" alt="">
+              </div>
+              <div class="user-top-info">
+                <h1>Michele</h1>
+                <p>Ultimo accesso oggi alle 12.00</p>
+              </div>
+            </div>
+
+            <!-- zona menu -->
+            <div class="chat-top-bar d-flex">
+              <ul class="top-menu d-flex ">
+                <li class="item-menu">
+                  <span><i class="fa-solid fa-magnifying-glass" style="color: #636363;"></i></span>
+                </li>
+                <li class="item-menu">
+                  <span><i class="fa-solid fa-paperclip" style="color: #636363;"></i></span>
+                </li>
+                <li class="item-menu">
+                  <span>
+                    <i class="fa-solid fa-ellipsis-vertical" style="color: #636363;"></i>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- inizio della zona della chat  -->
+
+          <div class="chat-area debug">
+        
+          </div>
+
+          <div class="input-chat-area d-flex">
+              <div class="emoji">
+                <span>
+                  <i class="fa-regular fa-face-smile" style="color: #636363;"></i>
+                </span>
+              </div>
+              <div class="input-chat">
+                <input class="chat" type="text" placeholder="    Scrivi un messaggio">
+              </div>
+              <div class="mic">
+                <span>
+                  <i class="fa-solid fa-microphone" style="color: #636363;"></i>
+                </span>
+              </div>
+          </div>
+      
+             <!-- fine del .chat-container -->
         </div>
 
-        
+        <!-- fine container generale -->
       </div>
 
 
-
+         <!-- fine del div #app -->
     </div>
 
 

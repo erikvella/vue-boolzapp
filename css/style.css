@@ -27,7 +27,7 @@ section{
 }
 
 .container{
-  min-height: 600px;
+ 
   height: 90%;
   width: 80%;
   background-color: rgb(208, 207, 207);
@@ -36,13 +36,13 @@ section{
 }
 
 .user-container{
-  min-height: 600px;
+ 
   height: 100%;
   width: 30%;
   flex-direction: column;
 }
 .chat-container{
-  min-height: 600px;
+  min-height: 600px;    /* altezza sarà da togliere */
   height: 100%;
   width: 70%;
 }
@@ -60,7 +60,7 @@ section{
   align-self: center;
   margin-left: 10px;
 }
-.user-area img{
+.box-image img{
   height: 90px;
 }
 .user-name{
@@ -124,4 +124,53 @@ section{
 .last-message-time{
   margin-left: 140px;
   margin-top: 5px;
+}
+/* fine parte dei contatti */
+
+/* inizio stili dedicati all'area chat */
+.top-bar{
+  justify-content: space-between;
+  background-color: rgb(241, 238, 238) ;
+  border-left: 1px solid grey;
+}
+
+.chat-top-bar{
+  height: 90px;
+}
+.user-top-info{
+  margin-left: 10px;
+  align-self: center;
+}
+.top-menu{
+  list-style: none;
+  align-self: center;
+}
+.item-menu span{
+  margin-right: 20px;
+  font-size: 2rem;
+}
+
+/* stili dedicati all'area della chat vera e propria */
+
+.chat-area{
+width: 100%;
+min-height: 600px;    /* altezza sarà da togliere */
+}
+
+.input-chat-area{
+  width: 100%;
+  min-height: 90px;
+  border-left: 1px solid grey;
+  justify-content: space-around;
+  align-items: center;
+}
+.fa-face-smile , .fa-microphone{
+  font-size: 2rem;
+}
+
+.chat{
+  height: 70px;
+  min-width: 800px;
+  border: 1px solid rgb(197, 196, 196);
+  border-radius: 5px;
 }
