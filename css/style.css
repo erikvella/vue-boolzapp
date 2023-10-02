@@ -154,8 +154,11 @@ section{
 
 .chat-area{
 width: 100%;
-min-height: 600px;    /* altezza sarà da togliere */
+background-image: url(/img/mine.jpg);   
+min-height: 600px; /* altezza sarà da togliere */
+flex-direction: column;
 }
+
 
 .input-chat-area{
   width: 100%;
@@ -173,4 +176,13 @@ min-height: 600px;    /* altezza sarà da togliere */
   min-width: 800px;
   border: 1px solid rgb(197, 196, 196);
   border-radius: 5px;
+}
+
+.msg-in{
+  border-radius: 10px;
+  background-color: white;
+}
+.msg-out{
+  border-radius: 10px;
+  background-color: rgb(70, 187, 70);
 }
