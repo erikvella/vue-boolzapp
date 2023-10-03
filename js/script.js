@@ -186,7 +186,7 @@ methods:{
 
   addMessage(){
     console.log('sent message');
-    this.contacts.messages.push(this.newMessage)
+    this.messages.push(this.newMessage)
     this.newMessage = '';
   }
 },
