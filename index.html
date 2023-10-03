@@ -84,6 +84,7 @@
 
 
         <div v-for="(contact , index) in contacts"
+            @click="showChat(index)"
              class="contact-area d-flex ">
 
           <div class="box-image">
@@ -117,13 +118,16 @@
               <!-- zona user della chat attuale -->
           <div class="top-bar d-flex">
 
-            <div class="chat-top-bar d-flex">
+            <div v-if="activeIndex != null"
+            class="chat-top-bar d-flex">
               <div class="box-image">
-                <img src="img/avatar_1.jpg" alt="">
+                <img :src="contacts[activeIndex].avatar" alt="">
               </div>
               <div class="user-top-info">
-                <h1>Michele</h1>
-                <p>Ultimo accesso oggi alle 12.00</p>
+                <h1>{{contacts[activeIndex].name}}</h1>
+                <p class="grey-text">
+                  Ultimo accesso oggi alle 12.00
+                </p>
               </div>
             </div>
 
