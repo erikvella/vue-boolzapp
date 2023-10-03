@@ -186,7 +186,7 @@ overflow-y: scroll;
   padding-left: 20px;
 }
 
-.msg-in{
+.received{
   border-radius: 10px;
   background-color: white;
   width: 250px;
@@ -195,7 +195,7 @@ overflow-y: scroll;
   clear: both;
   margin: 30px;
 }
-.msg-out{
+.sent{
   border-radius: 10px;
   background-color: rgb(146, 243, 146);
   width: 250px;
