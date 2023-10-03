@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>  
   <title>Vue Boolzapp</title>
 </head>
 <body>
@@ -55,7 +56,7 @@
             </div>
             <div class="blu-area-text">
               <p>
-                <strong>Ricevi notifiche di nuovi messaggi</strong>
+                <strong>Ricevi le notifiche di nuovi messaggi</strong>
               </p>
               <p>
                 <a style="color: #000000;" href="#">Attiva notifiche desktop</a>
@@ -82,13 +83,14 @@
       <div class="all-contacts">
 
 
-        <div class="contact-area d-flex ">
+        <div v-for="(contact , index) in contacts"
+        class="contact-area d-flex ">
           <div class="box-image">
             <img src="img/avatar_1.jpg" alt="avatar_1">
           </div>
 
           <div class="contact-info">
-            <h2>Michele</h2>
+            <h2>{{contact.name}}</h2>
             <p class="grey-text">Ultimo messaggio inviato</p>
           </div>
           <div class="last-message-time">
@@ -144,14 +146,14 @@
 
           <!-- inizio della zona della chat  -->
 
-          <div class="chat-area d-flex ">
+          <div class="chat-area">
             <!-- box bianco messaggi ricevuti -->
             <div class="msg-in">
-             ciaoooo
+             <p>ciaooo</p>
             </div>
             <!-- box verde messaggi inviati -->
             <div class="msg-out">
-              che cazz vuoi??
+              <p>ciao miticooo</p>
             </div>
         
           </div>

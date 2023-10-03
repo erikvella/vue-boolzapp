@@ -109,12 +109,14 @@ section{
   border-radius: 15px;
   min-width: calc(100% - 10px);
   border: 1px solid grey;
+  padding-left: 20px;
 }
 /* fine stili input area (ricerca contatti) */
 
 /* parte dedicata ai miei contantti */
 .all-contacts{
   overflow-y: scroll;
+  max-height: 549px;
 }
 .contact-area{
   width: 100%;
@@ -181,6 +183,7 @@ overflow-y: scroll;
   min-width: 800px;
   border: 1px solid rgb(197, 196, 196);
   border-radius: 5px;
+  padding-left: 20px;
 }
 
 .msg-in{
@@ -189,6 +192,8 @@ overflow-y: scroll;
   width: 250px;
   padding: 20px;
   float: left;
+  clear: both;
+  margin: 30px;
 }
 .msg-out{
   border-radius: 10px;
@@ -196,4 +201,6 @@ overflow-y: scroll;
   width: 250px;
   padding: 20px;
   float: right;
+  clear: both;
+  margin: 30px;
 }
