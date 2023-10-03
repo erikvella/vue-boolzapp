@@ -23,8 +23,7 @@ section{
   padding-top: 30px;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(161, 161, 161);
-  background-image: linear-gradient(green,rgb(161, 161, 161));
+  background-image: linear-gradient(to bottom,green 0px , green 15vh , rgb(161, 161, 161) 15vh , rgb(161, 161, 161) 100% );
 }
 
 .container{
@@ -208,4 +207,10 @@ overflow-y: scroll;
 .time-chat{
   float: right;
   font-size: 0.8rem;
+}
+
+/* classe active */
+
+.active{
+  background-color: rgb(225, 218, 218);
 }
