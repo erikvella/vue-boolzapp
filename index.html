@@ -151,18 +151,16 @@
 
           <!-- inizio della zona della chat  -->
 
-          <div class="chat-area">
+          <div  v-if="activeIndex != null"
+               class="chat-area">
             <!-- box bianco messaggi ricevuti -->
             <div v-for="message in contacts[activeIndex].messages"
-            class="received">
-             <p>ciaooo</p>
-             <p class="time-chat grey-text">12.00</p>
+            class="{{message.status}}">
+             <p>{{message.message}}</p>
+             <p class="time-chat grey-text">{{message.date}}</p>
             </div>
             <!-- box verde messaggi inviati -->
-            <div class="sent">
-              <p>ciao miticooo</p>
-              <p class="time-chat grey-text">12.05</p>
-            </div>
+            
         
           </div>
 
