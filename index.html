@@ -155,7 +155,7 @@
                class="chat-area">
             <!-- box bianco messaggi ricevuti -->
             <div v-for="message in contacts[activeIndex].messages"
-            class="{{message.status}}">
+            :class="message.status">
              <p>{{message.message}}</p>
              <p class="time-chat grey-text">{{message.date}}</p>
             </div>
