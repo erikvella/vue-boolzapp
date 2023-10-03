@@ -197,10 +197,14 @@ overflow-y: scroll;
 }
 .msg-out{
   border-radius: 10px;
-  background-color: rgb(70, 187, 70);
+  background-color: rgb(146, 243, 146);
   width: 250px;
   padding: 20px;
   float: right;
   clear: both;
   margin: 30px;
+}
+.time-chat{
+  float: right;
+  font-size: 0.8rem;
 }
