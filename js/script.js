@@ -4,6 +4,7 @@ createApp({
 data(){
   return{
     activeIndex: null,
+    newMessage: '',
     contacts: [
       {
           name: 'Michele',
@@ -181,6 +182,12 @@ methods:{
     console.log(index);
     this.activeIndex = index;
 
+  },
+
+  addMessage(){
+    console.log('sent message');
+    this.contacts.messages.push(this.newMessage)
+    this.newMessage = '';
   }
 },
 
