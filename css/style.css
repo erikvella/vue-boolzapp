@@ -186,8 +186,14 @@ overflow-y: scroll;
 .msg-in{
   border-radius: 10px;
   background-color: white;
+  width: 250px;
+  padding: 20px;
+  float: left;
 }
 .msg-out{
   border-radius: 10px;
   background-color: rgb(70, 187, 70);
+  width: 250px;
+  padding: 20px;
+  float: right;
 }
