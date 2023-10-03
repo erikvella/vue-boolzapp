@@ -24,6 +24,7 @@ section{
   width: 100vw;
   height: 100vh;
   background-color: rgb(161, 161, 161);
+  background-image: linear-gradient(green,rgb(161, 161, 161));
 }
 
 .container{
