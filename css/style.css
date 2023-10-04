@@ -23,7 +23,7 @@ section{
   padding-top: 30px;
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(green 0px , green 15vh , rgb(161, 161, 161) 15vh , rgb(161, 161, 161) 100% );
+  background-image: linear-gradient(rgb(17, 119, 71) 0px , rgb(17, 119, 71) 15vh , rgb(161, 161, 161) 15vh , rgb(161, 161, 161) 100% );
 }
 
 .container{

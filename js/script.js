@@ -208,8 +208,8 @@ methods:{
 }
   setTimeout(()=>{
     this.contacts[this.activeIndex].messages.push(newAnswer); 
-  },2500);
-   
+  },2800);
+
   },
 
   getLastMessage(contact){
@@ -220,8 +220,20 @@ methods:{
     // per restituire sempre e solo l'ultimo message dell'array messages uso  at()  
     return contact.messages.at(-1).date;
   },
-},
-mounted(){
 
+
+  // funzione per la ricerca degli utenti
+  
 },
+
+computed: {
+  findContact(){
+    const contactToSearch =  ;
+  }
+},
+// created rompe la pagina
+// created(){
+//   this.contacts[activeIndex].messages = this.contacts[0];
+// },
+
 }).mount('#app');
