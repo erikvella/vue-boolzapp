@@ -1,4 +1,6 @@
 const {createApp} = Vue;
+// prendo luxon
+const dt = luxon.DateTime;
 
 createApp({
 data(){
@@ -188,17 +190,30 @@ methods:{
     console.log('sent message');
 
     const newMessageObj = {
-      date: '10/01/2020 15:51:00',
+      date: dt.now().setLocale('it').toLocaleString(dt.DATETIME_SHORT_WITH_SECONDS),
       message: this.newMessageStr,
       status: 'sent'
   }
+  setTimeout(()=>{
+    this.contacts[this.activeIndex].messages.push(newMessageObj);
   
-    this.contacts[this.activeIndex].messages.push(this.newMessageObj);
-  
-    this.newMessageStr = '';
-  }
-},
+    this.newMessageStr = ''; 
+  },800);
 
+
+  const newAnswer = {
+    date: dt.now().setLocale('it').toLocaleString(dt.DATETIME_SHORT_WITH_SECONDS),
+    message: 'ok!!!',
+    status: 'received'
+}
+  setTimeout(()=>{
+    this.contacts[this.activeIndex].messages.push(newAnswer); 
+  },2500);
+   
+  },
+
+
+},
 mounted(){
 
 },

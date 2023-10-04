@@ -164,6 +164,7 @@ background-image: url(/img/mine.jpg);
 min-height: 600px;               /* altezza sarà da togliere */
 flex-direction: column;
 overflow-y: scroll;
+max-height: 600px;
 }
 
 
