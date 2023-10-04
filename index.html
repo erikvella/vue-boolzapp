@@ -178,7 +178,7 @@
               <div class="input-chat">
                 <input 
                 @keyup.enter="addMessage"
-                v-model="newMessage"
+                v-model.trim="newMessageStr"
                 class="chat" type="text" placeholder="  Scrivi un messaggio">
               </div>
               <div class="mic">
