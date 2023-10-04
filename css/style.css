@@ -122,13 +122,15 @@ section{
   width: 100%;
   height: 90px;
   background-color: rgb(255, 255, 255);
+  position: relative;
 }
 .contact-info{
   margin-top: 5px;
   margin-left: 10px;
 }
 .last-message-time{
-  margin-left: 140px;
+  position: absolute;
+  right: 5px;
   margin-top: 5px;
 }
 /* fine parte dei contatti */

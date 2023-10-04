@@ -212,7 +212,14 @@ methods:{
    
   },
 
-
+  getLastMessage(contact){
+    // per restituire sempre e solo l'ultimo message dell'array messages uso  at()  
+    return contact.messages.at(-1).message;
+  },
+  getLastDate(contact){
+    // per restituire sempre e solo l'ultimo message dell'array messages uso  at()  
+    return contact.messages.at(-1).date;
+  },
 },
 mounted(){
 

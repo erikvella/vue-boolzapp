@@ -97,10 +97,10 @@
 
           <div class="contact-info">
             <h2>{{contact.name}}</h2>
-            <p class="grey-text">Ultimo messaggio inviato</p>
+            <p class="grey-text">{{ getLastMessage(contact) }}</p>
           </div>
           <div class="last-message-time">
-            <p class="grey-text">12.00</p>
+            <p class="grey-text">{{ getLastDate(contact) }}</p>
           </div>
         </div>
 
