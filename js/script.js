@@ -7,6 +7,7 @@ data(){
   return{
     activeIndex: null,
     newMessageStr: '',
+    contactToSearch: '',
     contacts: [
       {
           name: 'Michele',
@@ -227,8 +228,10 @@ methods:{
 },
 
 computed: {
-  findContact(){
-    const contactToSearch =  ;
+  filteredContacts(){
+    return this.contacts.filter(c => {
+      return c.name.toLowerCase().indexOf(this.contactToSearch.toLowerCase()) != -1;
+    }) ;
   }
 },
 // created rompe la pagina
