@@ -88,7 +88,7 @@
       <div class="all-contacts">
 
 
-        <div v-for="contact in filteredContacts"
+        <div v-for="(contact , index) in filteredContacts"
             @click="showChat(index)"
             :class="{'active': index === activeIndex}"
              class="contact-area d-flex ">
