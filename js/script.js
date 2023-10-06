@@ -7,7 +7,10 @@ data(){
   return{
     activeIndex: null,
     newMessageStr: '',
-    contactToSearch: '',
+    searchStr: '',
+
+
+
     contacts: [
       {
           name: 'Michele',
@@ -229,8 +232,8 @@ methods:{
 
 computed: {
   filteredContacts(){
-    return this.contacts.filter(c => {
-      return c.name.toLowerCase().indexOf(this.contactToSearch.toLowerCase()) != -1;
+    return this.contacts.filter(contact => {
+      return contact.name.toLowerCase().includes(this.searchStr.toLowerCase());
     }) ;
   }
 },

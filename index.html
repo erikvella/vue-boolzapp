@@ -76,8 +76,7 @@
             <div class="contact-search-bar">
               <input 
               class="input-bar" type="text" 
-              v-model.trim="contactToSearch"
-              @keyup.enter="filteredContacts"
+              v-model.trim="searchStr"
               placeholder="  Cerca tra i tuoi contatti">
             </div>
 
@@ -89,7 +88,7 @@
       <div class="all-contacts">
 
 
-        <div v-for="(contact , index) in contacts"
+        <div v-for="contact in filteredContacts"
             @click="showChat(index)"
             :class="{'active': index === activeIndex}"
              class="contact-area d-flex ">
